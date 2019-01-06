@@ -36,7 +36,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
         
         backgroundImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
-        backgroundImageView.image = UIImage(named: "background2")!
+        backgroundImageView.image = UIImage(named: "background")!
         backgroundImageView.contentMode = .scaleAspectFill
         backgroundImageView.addBlurEffect()
         
@@ -106,8 +106,6 @@ class LoginController: UIViewController, UITextFieldDelegate {
         signupButton.titleLabel?.font = UIFont(name: "Courier New", size: 13)
         signupButton.addTarget(self, action: #selector(signUp), for: .touchUpInside)
         self.view.addSubview(signupButton)
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -205,6 +203,8 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func signIn() {
+        
+        self.navigationController?.pushViewController(HomeController(), animated: true)
         
     }
     

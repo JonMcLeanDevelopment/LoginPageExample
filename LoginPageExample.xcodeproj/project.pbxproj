@@ -19,6 +19,7 @@
 		FC4ADAD721E1F292004CE8CA /* UIImageView+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD621E1F292004CE8CA /* UIImageView+BlurEffect.swift */; };
 		FC4ADAD921E2161B004CE8CA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD821E2161B004CE8CA /* RoundedButton.swift */; };
 		FC4ADADB21E216BD004CE8CA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADADA21E216BD004CE8CA /* Colors.swift */; };
+		FC4ADADD21E21F2F004CE8CA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADADC21E21F2F004CE8CA /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC4ADAD621E1F292004CE8CA /* UIImageView+BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+BlurEffect.swift"; sourceTree = "<group>"; };
 		FC4ADAD821E2161B004CE8CA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FC4ADADA21E216BD004CE8CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FC4ADADC21E21F2F004CE8CA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4ADABB21E1EE15004CE8CA /* LoginController.swift */,
+				FC4ADADC21E21F2F004CE8CA /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FC4ADABC21E1EE15004CE8CA /* LoginController.swift in Sources */,
 				FC4ADABA21E1EE15004CE8CA /* AppDelegate.swift in Sources */,
 				FC4ADAC221E1EE15004CE8CA /* LoginPageExample.xcdatamodeld in Sources */,
+				FC4ADADD21E21F2F004CE8CA /* HomeController.swift in Sources */,
 				FC4ADAD921E2161B004CE8CA /* RoundedButton.swift in Sources */,
 				FC4ADAD321E1F0FE004CE8CA /* UnderlinedTextField.swift in Sources */,
 				FC4ADAD521E1F12D004CE8CA /* UIViewController+HideKeyboard.swift in Sources */,
