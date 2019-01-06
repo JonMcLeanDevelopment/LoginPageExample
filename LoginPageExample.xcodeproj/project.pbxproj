@@ -14,6 +14,11 @@
 		FC4ADAC221E1EE15004CE8CA /* LoginPageExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAC021E1EE15004CE8CA /* LoginPageExample.xcdatamodeld */; };
 		FC4ADAC421E1EE16004CE8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4ADAC321E1EE16004CE8CA /* Assets.xcassets */; };
 		FC4ADAC721E1EE16004CE8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4ADAC521E1EE16004CE8CA /* LaunchScreen.storyboard */; };
+		FC4ADAD321E1F0FE004CE8CA /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD221E1F0FE004CE8CA /* UnderlinedTextField.swift */; };
+		FC4ADAD521E1F12D004CE8CA /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD421E1F12D004CE8CA /* UIViewController+HideKeyboard.swift */; };
+		FC4ADAD721E1F292004CE8CA /* UIImageView+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD621E1F292004CE8CA /* UIImageView+BlurEffect.swift */; };
+		FC4ADAD921E2161B004CE8CA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADAD821E2161B004CE8CA /* RoundedButton.swift */; };
+		FC4ADADB21E216BD004CE8CA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4ADADA21E216BD004CE8CA /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		FC4ADAC321E1EE16004CE8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4ADAC621E1EE16004CE8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4ADAC821E1EE16004CE8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4ADAD221E1F0FE004CE8CA /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		FC4ADAD421E1F12D004CE8CA /* UIViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
+		FC4ADAD621E1F292004CE8CA /* UIImageView+BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+BlurEffect.swift"; sourceTree = "<group>"; };
+		FC4ADAD821E2161B004CE8CA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FC4ADADA21E216BD004CE8CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +90,10 @@
 		FC4ADAB821E1EE15004CE8CA /* LoginPageExample */ = {
 			isa = PBXGroup;
 			children = (
-				FC4ADAB921E1EE15004CE8CA /* AppDelegate.swift */,
-				FC4ADABB21E1EE15004CE8CA /* LoginController.swift */,
+				FC4ADACE21E1F0B5004CE8CA /* Application */,
+				FC4ADACF21E1F0BB004CE8CA /* Controllers */,
+				FC4ADAD021E1F0BF004CE8CA /* Design */,
+				FC4ADAD121E1F0C3004CE8CA /* Extensions */,
 				FC4ADABD21E1EE15004CE8CA /* Main.storyboard */,
 				FC4ADAC321E1EE16004CE8CA /* Assets.xcassets */,
 				FC4ADAC521E1EE16004CE8CA /* LaunchScreen.storyboard */,
@@ -89,6 +101,41 @@
 				FC4ADAC021E1EE15004CE8CA /* LoginPageExample.xcdatamodeld */,
 			);
 			path = LoginPageExample;
+			sourceTree = "<group>";
+		};
+		FC4ADACE21E1F0B5004CE8CA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FC4ADAB921E1EE15004CE8CA /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FC4ADACF21E1F0BB004CE8CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4ADABB21E1EE15004CE8CA /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC4ADAD021E1F0BF004CE8CA /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				FC4ADAD221E1F0FE004CE8CA /* UnderlinedTextField.swift */,
+				FC4ADAD821E2161B004CE8CA /* RoundedButton.swift */,
+				FC4ADADA21E216BD004CE8CA /* Colors.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		FC4ADAD121E1F0C3004CE8CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC4ADAD421E1F12D004CE8CA /* UIViewController+HideKeyboard.swift */,
+				FC4ADAD621E1F292004CE8CA /* UIImageView+BlurEffect.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4ADAD721E1F292004CE8CA /* UIImageView+BlurEffect.swift in Sources */,
+				FC4ADADB21E216BD004CE8CA /* Colors.swift in Sources */,
 				FC4ADABC21E1EE15004CE8CA /* LoginController.swift in Sources */,
 				FC4ADABA21E1EE15004CE8CA /* AppDelegate.swift in Sources */,
 				FC4ADAC221E1EE15004CE8CA /* LoginPageExample.xcdatamodeld in Sources */,
+				FC4ADAD921E2161B004CE8CA /* RoundedButton.swift in Sources */,
+				FC4ADAD321E1F0FE004CE8CA /* UnderlinedTextField.swift in Sources */,
+				FC4ADAD521E1F12D004CE8CA /* UIViewController+HideKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
